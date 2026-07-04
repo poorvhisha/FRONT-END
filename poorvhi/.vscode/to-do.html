@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Empower To-Do ✨</title>
+</head>
+<body style="font-family: 'Segoe UI', sans-serif; text-align:center; background:#ffe6f0; transition:0.3s;">
+<h1 style="color:#d63384;">💖 You Can Do Anything 💖</h1>
+<p style="color:#6c757d;">Organize your life. Own your power. 🌸</p>
+<input type="text" id="taskInput" placeholder="Write your goal..." 
+style="padding:10px; border-radius:20px; border:1px solid #d63384; width:200px;">
+<button onclick="addTask()" 
+style="padding:10px; border:none; border-radius:20px; background:#d63384; color:white;">➕ Add</button>
+<button onclick="toggleMode()" 
+style="padding:10px; border:none; border-radius:20px; background:#6f42c1; color:white;">🌙 Mode</button>
+<br><br>
+<ul id="taskList" style="list-style:none; padding:0;"></ul>
+<script>
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+let darkMode = false;
+function saveTasks() {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+function renderTasks() {
+    let list = document.getElementById("taskList");
+    list.innerHTML = "";
+    tasks.forEach((task, index) => {
+        let li = document.createElement("li");
+        li.style.background = darkMode ? "#2c2c2c" : "#fff0f5";
+        li.style.margin = "10px auto";
+        li.style.padding = "12px";
+        li.style.width = "260px";
+        li.style.borderRadius = "15px";
+        li.style.boxShadow = "0 2px 8px rgba(0,0,0,0.1)";
+        li.innerHTML = `
+            <span onclick="toggleComplete(${index})"
+                  style="cursor:pointer; display:block; ${task.done ? 'text-decoration:line-through; color:gray;' : 'color:#d63384; font-weight:bold;'}">
+                💫 ${task.text}
+                <br><small style="color:gray;">${task.time}</small>
+            </span>
+            <br>
+            <button onclick="editTask(${index})" style="border:none; background:#ffc107; border-radius:10px;">✏️</button>
+            <button onclick="deleteTask(${index})" style="border:none; background:#dc3545; color:white; border-radius:10px;">❌</button>
+        `;
+        list.appendChild(li);
+    });
+}
+function addTask() {
+    let input = document.getElementById("taskInput");
+    if (input.value.trim() === "") return;
+    tasks.push({
+        text: input.value,
+        done: false,
+        time: new Date().toLocaleString()
+    });
+    input.value = "";
+    saveTasks();
+    renderTasks();
+}
+function deleteTask(index) {
+    tasks.splice(index, 1);
+    saveTasks();
+    renderTasks();
+}
+function toggleComplete(index) {
+    tasks[index].done = !tasks[index].done;
+    saveTasks();
+    renderTasks();
+}
+function editTask(index) {
+    let newText = prompt("Rewrite your goal ✨:", tasks[index].text);
+    if (newText !== null) {
+        tasks[index].text = newText;
+        saveTasks();
+        renderTasks();
+    }
+}
+function toggleMode() {
+    darkMode = !darkMode;
+    document.body.style.background = darkMode ? "#1a1a1a" : "#ffe6f0";
+    document.body.style.color = darkMode ? "white" : "black";
+    renderTasks();
+}
+renderTasks();
+</script>
+</body>
+</html>
