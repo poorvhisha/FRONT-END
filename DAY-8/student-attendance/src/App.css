@@ -1,0 +1,39 @@
+.dashboard-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-box {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+.dashboard-box select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+.attendance-container {
+  padding: 40px;
+  text-align: center;
+}
+table {
+  margin: auto;
+  width: 60%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+th {
+  background-color: #4facfe;
+  color: white;
+}
+.summary {
+  margin-top: 30px;
+  font-size: 18px;
+}
