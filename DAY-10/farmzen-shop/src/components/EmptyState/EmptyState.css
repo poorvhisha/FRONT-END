@@ -1,0 +1,19 @@
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.empty-box {
+  background: #1e293b;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: #94a3b8;
+  border: 1px dashed #334155;
+}
+
+.empty-box h3 {
+  font-weight: 500;
+}

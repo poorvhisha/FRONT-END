@@ -1,0 +1,20 @@
+.rating {
+  display: flex;
+  gap: 6px;
+}
+
+.rating svg {
+  color: #475569;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+/* filled */
+.rating .filled {
+  color: #facc15;
+}
+
+/* hover effect */
+.rating svg:hover {
+  transform: scale(1.2);
+}

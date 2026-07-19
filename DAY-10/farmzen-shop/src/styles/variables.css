@@ -1,0 +1,23 @@
+:root {
+  --primary: #4f46e5;
+  --secondary: #6366f1;
+
+  --bg: #f9fafb;
+  --text: #111827;
+
+  --card-bg: #ffffff;
+
+  --radius: 10px;
+  --padding: 16px;
+
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+
+/* dark theme */
+.dark {
+  --bg: #111827;
+  --text: #f9fafb;
+
+  --card-bg: #1f2937;
+}

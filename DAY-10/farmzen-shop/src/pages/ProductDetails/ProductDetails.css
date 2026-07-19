@@ -1,0 +1,32 @@
+.details {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  background: linear-gradient(135deg, #020617, #022c22, #064e3b);
+  color: white;
+}
+
+.details img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.info h2 {
+  font-size: 28px;
+}
+
+.info p {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #4ade80;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

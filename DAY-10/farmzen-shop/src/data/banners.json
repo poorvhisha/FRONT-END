@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "image": "https://via.placeholder.com/800x300?text=Fresh+Vegetables",
+    "title": "Fresh Vegetables",
+    "subtitle": "Direct from farmers",
+    "buttonText": "Shop Now"
+  },
+  {
+    "id": 2,
+    "image": "https://via.placeholder.com/800x300?text=Organic+Fruits",
+    "title": "Organic Fruits",
+    "subtitle": "Healthy & Natural",
+    "buttonText": "Explore"
+  }
+]

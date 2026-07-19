@@ -1,0 +1,29 @@
+.review-card {
+  background: #020617;
+  padding: 18px;
+  border-radius: 14px;
+  color: white;
+  margin-bottom: 15px;
+  border: 1px solid #1e293b;
+  transition: 0.3s;
+}
+
+/* hover */
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* name */
+.review-card h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* comment */
+.review-card p {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 1.5;
+}

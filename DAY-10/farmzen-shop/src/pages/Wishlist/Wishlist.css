@@ -1,0 +1,88 @@
+/* MAIN */
+.wishlist {
+  min-height: 100vh;
+  background: #0f172a;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+/* EMPTY */
+.empty {
+  color: #94a3b8;
+}
+
+/* GRID */
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* CARD */
+.wish-card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.wish-card:hover {
+  transform: scale(1.03);
+}
+
+/* IMAGE */
+.wish-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.wish-card h3 {
+  margin: 5px 0;
+}
+
+.wish-card p {
+  color: #94a3b8;
+}
+
+/* BUTTONS */
+.btns {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* MOVE BUTTON */
+.move-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #22c55e;
+  color: white;
+  cursor: pointer;
+}
+
+.move-btn:hover {
+  background: #16a34a;
+}
+
+/* REMOVE BUTTON */
+.remove-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: darkred;
+}

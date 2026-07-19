@@ -1,0 +1,22 @@
+/* light theme (default) */
+.light {
+  --bg: #ffffff;
+  --text: #333333;
+}
+
+/* dark theme */
+.dark {
+  --bg: #121212;
+  --text: #ffffff;
+}
+
+/* apply theme */
+body.light {
+  background: var(--bg);
+  color: var(--text);
+}
+
+body.dark {
+  background: var(--bg);
+  color: var(--text);
+}

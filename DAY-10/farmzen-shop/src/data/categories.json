@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Vegetables",
+    "slug": "vegetables",
+    "image": "https://via.placeholder.com/150?text=Vegetables"
+  },
+  {
+    "id": 2,
+    "name": "Fruits",
+    "slug": "fruits",
+    "image": "https://via.placeholder.com/150?text=Fruits"
+  },
+  {
+    "id": 3,
+    "name": "Dairy",
+    "slug": "dairy",
+    "image": "https://via.placeholder.com/150?text=Dairy"
+  }
+]

@@ -1,0 +1,30 @@
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.slider img {
+  width: 320px;
+  border-radius: 12px;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* BUTTON */
+.nav-btn {
+  padding: 12px 16px;
+  background: #22c55e;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: #16a34a;
+  transform: scale(1.1);
+}

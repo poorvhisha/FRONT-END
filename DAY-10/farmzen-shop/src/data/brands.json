@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "FreshFarm",
+    "logo": "https://via.placeholder.com/100"
+  },
+  {
+    "id": 2,
+    "name": "OrganicLife",
+    "logo": "https://via.placeholder.com/100"
+  },
+  {
+    "id": 3,
+    "name": "GreenMart",
+    "logo": "https://via.placeholder.com/100"
+  }
+]

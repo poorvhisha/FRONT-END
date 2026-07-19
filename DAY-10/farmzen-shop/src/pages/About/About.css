@@ -1,0 +1,106 @@
+.about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
+}
+
+/* CARD */
+.card {
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+
+  color: #e5e7eb;
+}
+
+.card h1 {
+  font-size: 40px;
+  color: #22c55e;
+}
+
+.tagline {
+  margin: 10px 0;
+  color: #9ca3af; 
+}
+
+/* DESCRIPTION (We provide farm-fresh...) */
+.desc {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #d1d5db; 
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+/* BOX */
+.box {
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  color: #e5e7eb;
+  transition: 0.3s;
+}
+
+.box span {
+  color: #9ca3af;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.12);
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.stats h3 {
+  color: #e5e7eb;
+}
+
+.stats p {
+  color: #9ca3af;
+}
+
+.contact p {
+  margin: 3px 0;
+  color: #cbd5f5;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+
+  background: #e5e7eb;
+  color: #111827;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #d1d5db;
+}

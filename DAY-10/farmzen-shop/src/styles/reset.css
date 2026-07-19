@@ -1,0 +1,43 @@
+/* reset all */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body smooth */
+body {
+  line-height: 1.5;
+}
+
+/* remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* remove link underline */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* buttons */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+}
+
+/* input */
+input, textarea {
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
